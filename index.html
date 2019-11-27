@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang ="es">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<link rel="stylesheet" type="text/css" media="screen and (color)" href="css/estilos2.css">
+	<script src="javaScript/funciones.js"></script>
+
+
+	<title>Puzzle PCW | Juego</title>
+
+</head>
+<body >
+
+<header id="header" class ="transparentar">
+	<a href="index.html"><img src="imagenes/Puzzle.png" alt="Logo del sitio" id="imgLogo"></a> 
+	<h1 id="h1">Puzzle PCW</h1>
+</header>
+
+<main id="main" >
+
+	<section id="sectionCargador" class ="transparentar">
+		<p id="pCargador">Seleccione una dificultad y arrastre una imagen para empezar a jugar</p>
+		<div>
+		<img id="imgSelecionada" src="imagenes/arrastrar1.png" alt="Imagen seleccionada" width="360" height="240">
+		</div>
+
+		<input id="inputSeleccionar" type="file" onchange="cargarImagen();" accept="image/*">
+
+		<h2 id="dificultad_h2">Dificultad:</h2>
+			<select id='dificultad' name="dificultad" onchange="cambiaDificultad(this);">
+				<option value="0">BAJA</option>
+				<option value="1">MEDIA</option>
+				<option value="2">ALTA</option>
+			</select>				
+		<br>
+
+		<div id="contenedor">
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+
+		<button id="recargar" onclick="NuevoJuego();">Iniciar Nuevo Juego</button>
+		
+		
+	</section>
+
+<div id="cajita1">
+	<section id="sectionPuzzle" class ="transparentar">
+		<h2 id="h2Puzzle">Seccion para colocar las piezas del puzzle</h2>
+		<div><canvas id="canvasPuzzle" width="360" height="240" draggable="true" ondrop="dropPuzzle(event);"></canvas></div>
+		<p>N&uacute;mero de movimientos: </p>
+		<p id ="pMovimientos">0</p>
+		<button id="buttonComprobar" onclick = "comprobarResultado();">Comprobar</button>
+		
+	</section>
+
+	<section id="sectionPiezas" class ="transparentar">
+		<canvas id="canvasPiezas" width="380" height="270" draggable="true" ondragstart="dragStart(event);"></canvas>
+		
+	</section>
+</div>
+
+</main>
+
+<footer id="footer" class ="transparentar">
+	<p>Copyright &copy; 2018. Todos los derechos reservados | <a href="acerca.html">Acerca del sitio.</a></p>
+</footer>
+
+<div id="popUp">
+	<span id="spanPopUp"></span>
+	<button id="buttonCerrarPopUp" onclick="cerrarPopUp();">Seguir jugando</button>
+</div>
+
+<canvas id="canvasUnica" width="60" height="60"></canvas>
+
+</body>
+
+</html>

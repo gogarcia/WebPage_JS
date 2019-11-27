@@ -1,0 +1,251 @@
+#imgSelecionada {
+  border: 3px dashed gray;
+  border-radius: 8px;
+  background: rgb(255,255,255);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#canvasPuzzle{
+	background-color: #bbb;
+	border:1px solid;
+  width: 360px;
+  height: 240px;
+}
+
+#canvasPiezas{
+	border:1px solid
+}
+
+#buttonComprobar{
+  visibility: hidden;
+}
+
+#h2Puzzle,#inputSeleccionar,#canvasUnica{
+  display: none;
+}
+
+
+/*POP UP ***************************************************************************/
+
+#popUp {
+    visibility: hidden;
+    
+    font-family:Arial,Helvetica,sans-serif;
+    
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    text-align:center;
+    font-weight:bold;
+    font-size:100%;
+    color: #36bfa6;
+    padding:70px 20px 70px 20px;
+    background-color:#2c3e50;
+
+    border-radius: 25px;
+}
+
+#message span {
+    text-align: center;
+    width: 95%;
+    float:left;
+}
+
+.close-notify {
+    white-space: nowrap;
+    float:right;
+    margin-right:10px;
+    color:#fff;
+    text-decoration:none;
+    border:2px #fff solid;
+    padding-left:3px;
+    padding-right:3px
+}
+
+.close-notify a {
+    color: #fff;
+}
+
+
+/*POP UP ***************************************************************************/
+
+html,body{
+  margin: 0px;
+    padding: 0px;
+
+  height: 100%;
+  width: 100%;
+
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+
+}
+
+
+h1{
+  font-size: 4em;
+  text-align: center;
+  color: #36bfa6;
+  display: inline;
+  margin-left: 30%;
+
+}
+
+p,a,h1,h2{
+  font-family: sans-serif;
+}
+
+header#header{
+  width: 100%;
+
+background: #2c3e50; /* Old browsers */
+background: -moz-linear-gradient(right,  #2c3e50 80%, #818a94 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, right, right, color-stop(80%,#2c3e50), color-stop(100%,#818a94)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* IE10+ */
+background: linear-gradient(to right,  #2c3e50 80%,#818a94 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#818a94',GradientType=0 ); /* IE6-9 */
+
+  
+  box-shadow:0px 2px 2px #888;
+
+}
+
+img#imgLogo{
+  margin-left: 10px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+#pCargador,#h2Piezas{
+  font: 120% sans-serif;
+}
+
+footer#footer{
+  margin: 0;
+    padding: 2em;
+background: #2c3e50; /* Old browsers */
+background: -moz-linear-gradient(right,  #2c3e50 80%, #818a94 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, right, right, color-stop(80%,#2c3e50), color-stop(100%,#818a94)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(right,  #2c3e50 80%,#818a94 100%); /* IE10+ */
+background: linear-gradient(to right,  #2c3e50 80%,#818a94 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#818a94',GradientType=0 ); /* IE6-9 */
+
+  border-bottom: 1px solid #1c326d;
+  border-top: 1px solid #1c326d;
+  text-align: center;
+
+  box-shadow:0px -2px 2px #888;
+
+  color: #27aae1;
+  margin-top: 7em;
+
+}
+
+a{
+    color: #27aae1;
+
+}
+
+
+#sectionPuzzle{
+margin-bottom: 2em;
+width: 50%;
+float: left;
+padding-top:4.1em;
+}
+#sectionPuzzle>p{
+
+  width: 11em;
+  float: left;
+}
+
+
+#sectionCargador{
+  width: 50%;
+  float:left;
+  padding-top: 4em;
+}
+
+#sectionCargador>p{
+  margin-bottom: 2em;
+}
+
+#sectionPiezas{
+
+  margin-left: 33%;
+}
+
+main{
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+#sectionIntroduccion,#sectionInfo{
+  margin-top:4.5em;
+}
+
+
+
+/* Reloj!!!!!*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#contenedor{
+  margin: 10px auto;
+  width: 540px;
+  height: 115px;
+}
+.reloj{
+  float: left;
+  font-size: 80px;
+  font-family: Courier,sans-serif;
+  color: #363431;
+}
+
+
+@media screen and (max-width:1050px){
+
+  #sectionPuzzle{
+
+    margin-bottom: 2em;
+    width: 100%;
+    float: left;
+    padding-top:3.5em;
+  }
+
+  #sectionCargador{
+    width: 100%;
+    float:left;
+  }
+
+  #sectionPiezas{
+
+    margin-left: 0;
+  }
+
+  main{
+
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width:720px){
+
+  main{
+
+    padding-left: 0;
+  }
+  body{
+    overflow-x:scroll; 
+  }
+}
